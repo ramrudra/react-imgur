@@ -1,6 +1,40 @@
-$background: lightblue;
+$background: #fff;
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background: $background;
   font-family: "Helvetica Neue", serif;
+}
+
+.gallery-app {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 95%;
+}
+
+// New Css
+.gallery-img {
+  background: gray;
+  margin: 5px;
+  padding: 5px;
+
+  &--thumb img {
+    height: 180px;
+    width: 180px;
+  }
+
+  p {
+    width: 180px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.gallery-container {
+  display: flex;
+  flex-flow: row wrap;
 }
