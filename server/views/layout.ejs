@@ -1,6 +1,37 @@
 <html>
 <head>
   <title>Imgur App With React</title>
+  <style media="screen">
+  * {
+    box-sizing: border-box; }
+
+  body {
+    background: #fff;
+    font-family: "Helvetica Neue", serif; }
+
+  .gallery-app {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 95%; }
+
+  .gallery-img {
+    background: gray;
+    margin: 5px;
+    padding: 5px; }
+    .gallery-img--thumb img {
+      height: 180px;
+      width: 180px; }
+    .gallery-img p {
+      width: 180px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+
+  .gallery-container {
+    display: flex;
+    flex-flow: row wrap; }
+
+  </style>
 </head>
   <body>
 
